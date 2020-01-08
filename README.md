@@ -1,2 +1,2 @@
 # Algorithms
-My realization of algorithms and structure data
+My realization of algorithms and structures data
