@@ -7,7 +7,13 @@ class LinkedList {
 public:
 
     class Iterator {
-
+        Iterator begin() const;
+        Iterator end() const;
+        bool operator==(const Iterator* it) const;
+        bool operator!=(const Iterator* it) const;
+        T operator*() const;
+        void operator++();
+        void operator--();
     };
 
     LinkedList(const T& = T{});
@@ -18,8 +24,7 @@ public:
 
     T head() const;
     T tail() const;
-//    Iterator begin() const;
-//    Iterator end() const;
+
 
     // Получить размер списка
     void show() const;
