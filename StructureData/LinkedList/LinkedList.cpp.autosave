@@ -53,15 +53,8 @@ T LinkedList<T>::tail() const
     m_tail->m_data;
 }
 
-Iterator LinkedList<T>::Iterator<T> begin() const
-{
-    
-}
 
-Iterator end() const
-{
-    
-}
+
 template <typename T>
 void LinkedList<T>::show() const
 {
