@@ -7,6 +7,7 @@
 *.o
 *.obj
 *.user
+*.autosave
 
 # Precompiled Headers
 *.gch
