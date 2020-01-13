@@ -23,13 +23,16 @@ public:
     void push_back(const T& = T{});
     void pop_front();
 
-    T head() const;
-    T tail() const;
+    inline T head() const;
+    inline T tail() const;
 
 
     // Получить размер списка
     void show() const;
-    size_t size() const;
+    inline size_t size() const;
+
+    T& operator[](const size_t);
+    T operator[](const size_t) const;
 private:
     struct Node {
         explicit Node (const T& data = T{}) :
